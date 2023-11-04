@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- Ciduficacion que tiene que usar -->
+    <meta charset="UTF-8"> <!-- Codificación que tiene que usar -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#33c1ff">
@@ -12,11 +12,26 @@
     <meta property="og:image:alt" content="Es una fotografia de un unicornio">
     <title>Curso HTML</title>
     <link rel="icon" type="image/jpg" href="assets/img/favicon.png"/>
+    <link rel="alternate" href="https://ejemplo.com.mx/en">
+    <link rel="canonical" href="https://ejemplo.com.mx">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <style>
+        body {
+            background: #09f;
+        }
+    </style> -->
 </head>
 <body>
-    <h1>Portfolio de Ivan</h1>
-    <p>+0 años de experiencia como <strong>Ingeniero de Software</strong> de programación</p>
+    <header>
+        <h1>Portfolio de Ivan</h1>
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a><!-- Enlaces Internos -->
+            <a href="https://twitch.tv/midudev">Twitch</a>
+        </nav>
+    </header>
+    <main>
+    <p>+0 años de experiencia como <strong>Ingeniero de Software</strong> (No soy ingeniero de Software) de programación</p>
     <h2>Experiencia</h2>
     <ul>
         <li>Home Depot</li>
@@ -25,5 +40,54 @@
     </ul>
     <img src="assets/img/unicornio.webp" title="Unicornio" width="200" height="200" alt="Unicornio">
     <!-- Comentarios -->
+    <h2>Proyectos realizados</h2>
+    <aside>
+        <header>
+            <h3>Mis tecnologias favoritas</h3>
+        </header>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node.Js</li>
+        </ol>
+    </aside>
+    <section>
+        <article>
+            <header>
+                <h4>Sitio web Corporativo</h4>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at dolore quo? Atque, a doloremque ipsum ea quod cum et delectus dignissimos voluptas in quis aspernatur error quisquam dolorum laudantium!
+            </p>
+            <footer>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h4>Sitio web Corporativo</h4>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at dolore quo? Atque, a doloremque ipsum ea quod cum et delectus dignissimos voluptas in quis aspernatur error quisquam dolorum laudantium!
+            </p>
+            <footer>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h4>Sitio web Corporativo</h4>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at dolore quo? Atque, a doloremque ipsum ea quod cum et delectus dignissimos voluptas in quis aspernatur error quisquam dolorum laudantium!
+            </p>
+            <footer>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+            </footer>
+        </article>
+    </section>
+    </main>
+
 </body>
 </html>
