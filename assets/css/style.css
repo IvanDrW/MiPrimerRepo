@@ -1,3 +1,11 @@
 .style__div-one img {
     width: 20%;
 }
+.style__div-one h3 {
+    font-size: 50px;
+    color: pink;
+}
+
+.style__div-one {
+    text-align: center;
+}
