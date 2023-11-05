@@ -24,14 +24,32 @@
 <body>
     <header>
         <h1>Portfolio de Ivan</h1>
+        <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/3nYLTiY5skU?si=qXdrtqUfq_ojdJRV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <nav>
             <a href="#experiencia">Experiencia</a>
             <a href="#proyectos">Proyectos</a><!-- Enlaces Internos -->
             <a href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
         </nav>
     </header>
-    <audio controls src="assets/sound/ringtones-smb.mp3"></audio>
+    <audio controls src="/assets/sound/ringtones-smb.mp3"></audio>
     <video autoplay loop muted src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" width="100%"></video>
+
+    <dialog id="dialog">
+        <h2>Hola Midudev</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, alias?</p>
+        <button id="hide">Close modal</button>
+      </dialog>
+      <button id="show">Ver más información</button>
+      <script>
+        window.show.addEventListener('click',() => {
+            window.dialog.showModal()
+        })
+
+        window.hide.addEventListener('click', () => {
+            window.dialog.close()
+        })
+      </script>
+
     <main>
     <p>+0 años de experiencia como <strong>Ingeniero de Software</strong> (No soy ingeniero de Software) de programación</p>
     <h2 id="experiencia">Experiencia</h2>
@@ -40,8 +58,8 @@
         <li>Coca-Cola</li>
         <li>Liverpool</li>
     </ul>
-    <a download href="assets/img/unicornio.webp" target="_blank">
-        <img src="assets/img/unicornio.webp" title="Descargar imagen" width="200" height="200" alt="Unicornio">
+    <a download href="/assets/img/unicornio.webp" target="_blank">
+        <img loading="lazy" src="assets/img/unicornio.webp" title="Descargar imagen" width="200" height="200" alt="Unicornio">
     </a>
     <h2 id="proyectos">Proyectos realizados</h2>
     <aside>
@@ -61,10 +79,11 @@
     <section>
         <article>
             <header>
-                <h4>Sitio web Corporativo</h4>
+                <h4>La página de Tesla</h4>
+                <img style="width: 100%; aspect-ratio: 337/164;" loading="lazy" src="/assets/img/tesla2.jpg" alt="Una fotografía de Tesla">
             </header>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at dolore quo? Atque, a doloremque ipsum ea quod cum et delectus dignissimos voluptas in quis aspernatur error quisquam dolorum laudantium!
+                Elon Musk me llamó e hice en una tarde esta página desde cero
             </p>
             <footer>
                 <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
