@@ -15,11 +15,11 @@
     <link rel="alternate" href="https://ejemplo.com.mx/en">
     <link rel="canonical" href="https://ejemplo.com.mx">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <style>
+    <style>
         body {
             background: #09f;
         }
-    </style> -->
+    </style>
 </head>
 <body>
     <header>
@@ -38,10 +38,9 @@
         <li>Coca-Cola</li>
         <li>Liverpool</li>
     </ul>
-    <a href="">
-        <img src="assets/img/unicornio.webp" title="Unicornio" width="200" height="200" alt="Unicornio">
+    <a download href="assets/img/unicornio.webp" target="_blank">
+        <img src="assets/img/unicornio.webp" title="Descargar imagen" width="200" height="200" alt="Unicornio">
     </a>
-    <!-- Comentarios -->
     <h2 id="proyectos">Proyectos realizados</h2>
     <aside>
         <header>
@@ -91,6 +90,52 @@
                 <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
             </footer>
         </article>
+    </section>
+    <section>
+        <h2>Formulario de contacto</h2>
+        <form method="post" action="/">
+            <fieldset>
+                <legend>Información personal</legend>
+                <!-- <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre"> forma de hacerlo-->
+                <!-- Tambien se puede hacer de esta forma -->
+                <div>
+                    <label>Nombre:
+                        <input 
+                        type="text" 
+                        name="name" 
+                        placeholder="Escribe tu nombre"
+                        required
+                        >
+                    </label>
+                </div>
+                <div>
+                    <label>Email:
+                        <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="ejemplo@gmail.com"
+                        required
+                        >
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Información adicional</legend>
+                <div>
+                    <label>Teléfono:
+                        <input 
+                        type="tel" 
+                        name="phone" 
+                        placeholder="Pon tu número teléfono"
+                        required
+                        pattern=""
+                        >
+                    </label>
+                </div>
+            </fieldset>
+            <input type="submit" value="Enviar contacto">
+        </form>
     </section>
     </main>
     <footer>
