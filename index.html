@@ -30,6 +30,7 @@
             <a href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
         </nav>
     </header>
+    <video controls src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"></video>
     <main>
     <p>+0 años de experiencia como <strong>Ingeniero de Software</strong> (No soy ingeniero de Software) de programación</p>
     <h2 id="experiencia">Experiencia</h2>
@@ -92,6 +93,21 @@
         </article>
     </section>
     <section>
+        <h2>Preguntas frecuentes</h2>
+        <details open>
+            <summary>¿Qué estudios tienes?</summary>
+            <p>Soy autodidacta, saludos Lily.</p>
+        </details>
+        <details>
+            <summary>¿Cuáles son tus hobbies?</summary>
+            <p>Ver videos y practicar programación, jugar video juegos retro, ver peliculas.</p>
+        </details>
+        <details>
+            <summary>¿Cuál es tu lenguaje favorito?</summary>
+            <p>JavaScript</p>
+        </details>
+    </section>
+    <section>
         <h2>Formulario de contacto</h2>
         <form method="post" action="/">
             <fieldset>
@@ -105,8 +121,7 @@
                         type="text" 
                         name="name" 
                         placeholder="Escribe tu nombre"
-                        required
-                        >
+                        required>
                     </label>
                 </div>
                 <div>
@@ -115,8 +130,7 @@
                         type="email" 
                         name="email" 
                         placeholder="ejemplo@gmail.com"
-                        required
-                        >
+                        required>
                     </label>
                 </div>
             </fieldset>
@@ -129,26 +143,42 @@
                         name="phone" 
                         placeholder="Pon tu número teléfono"
                         required
-                        pattern="[0-9]{9}"
-                        >
+                        pattern="[0-9]{9}">
                     </label>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Otros</legend>
                 <div>
-                    <label for="why">¿Por qu
-                        <input 
-                        type="tel" 
-                        name="phone" 
-                        placeholder="Pon tu número teléfono"
-                        required
-                        pattern="[0-9]{9}"
-                        >
-                    </label>
+                    <label for="why">¿Por qué quieres contactar?</label>
+                    <select name="why" id="why">
+                        <option value="1">Trabajo</option>
+                        <option value="2">Duda</option>
+                        <option value="3">Más información</option>
+                        <option value="4">No se</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="terms">¿Aceptas los términos?2</label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                </div>
+                <div>
+                    <datalist id="languages">
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="Java"></option>
+                        <option value="C#"></option>
+                        <option value="Pascal"></option>
+                      </datalist>
+                      <label for="">
+                        ¿Con qué lenguaje quieres que te ayude?
+                        <input list="languages" name="languages">
+                      </label>
                 </div>
             </fieldset>
-            <input type="submit" value="Enviar contacto">
+            <!-- <input type="submit" value="Enviar contacto"> -->
+            <!-- Tambien se puede usar -->
+            <button type="submit">Enviar contacto</button>
         </form>
     </section>
     </main>
